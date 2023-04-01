@@ -7,11 +7,19 @@ import ErrorPage from './Screens/ErrorPage';
 import Home from './Screens/Home';
 import Products from './Screens/Products';
 import SingleProduct from './Screens/SingleProduct';
+import { ThemeProvider } from '@mui/material';
+import theme from './Config/Theme/Theme';
+import Header from './Components/Header/Header';
+
+
+
 
 function App() {
   return (
-    <>
+    
+   <ThemeProvider theme={theme}>
    <Router>
+    <Header/>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
@@ -22,7 +30,8 @@ function App() {
       <Route path='*' element={<ErrorPage/>} />
     </Routes>
    </Router>
-    </>
+   </ThemeProvider>
+  
   )
 }
 
