@@ -18,13 +18,47 @@
 
 .nav_item:hover{
     color: #2196f3;
+
 }
 
 .cart{
     position: relative;
     font-size: 2rem;
+    color: black;
+}
+.cart_2{
+    position: relative;
+    font-size: 2rem;
+    color: black;
+
+}
+.cart:hover{
+    color: #2196f3;
+
+
 }
 
+.menu_icon{
+    font-size: 2rem;
+    color: black;
+    display: none;
+}
+/* .menu_icon:hover{
+    color: #2196f3;
+} */
 /* .nav_item:visited{
     color: #0d47a1;
 } */
+
+
+@media only screen and (max-width:768px){
+    .nav_list{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    .menu_icon{
+        display: block;
+    }
+}
