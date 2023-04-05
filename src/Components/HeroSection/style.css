@@ -1,0 +1,18 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    border-top: 30px solid #2196f3;
+    border-right: 30px solid #2196f3;;
+    
+}

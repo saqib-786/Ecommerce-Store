@@ -1,7 +1,8 @@
 import React from 'react';
+import HeroSection from '../Components/HeroSection/HeroSection';
 
 
-
+const title = 'My E-Store'
 
 
 
@@ -10,6 +11,7 @@ import React from 'react';
 function Home() {
   return (
     <>
+    <HeroSection  title={title} />
  
     </>
   )

@@ -2,11 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
 import { Button,Box } from "@mui/material";
-// import { useState } from "react";
+import {useEffect} from "react";
 import { IoMdClose } from "react-icons/io";
+import $ from 'jquery';
 import "./style.css";
 
 function Nav({setShowMenu,mobileNav,setMobileNav}) {
+
+  useEffect(()=>{
+    $(document).ready(function(){
+      $('#menu_btn').click(function(){
+        
+      })
+    })
+
+
+  })
 
   
   return (
@@ -34,11 +45,11 @@ function Nav({setShowMenu,mobileNav,setMobileNav}) {
         </ul>
 
         {mobileNav ? (
-          <Button onClick={()=>{setMobileNav(!mobileNav);setShowMenu(false)}} className="menu_icon">
+          <Button id="close_btn" onClick={()=>{setMobileNav(!mobileNav);setShowMenu(false)}} className="menu_icon">
             <IoMdClose className="menu_icon" />
           </Button>
         ) : (
-          <Button onClick={()=>{setMobileNav(true);setShowMenu(true)}} className="menu_icon">
+          <Button id="menu_btn" onClick={()=>{setMobileNav(true);setShowMenu(true)}} className="menu_icon">
             <FiMenu className="menu_icon" />
           </Button>
         )}
