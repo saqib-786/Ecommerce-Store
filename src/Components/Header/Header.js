@@ -12,6 +12,7 @@ const CustomContainer = styled(Container)(({ theme, variant, color }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  padding:'10px 0px'
 }));
 
 const CustomBox = styled(Box)(({ theme }) => ({
@@ -34,9 +35,11 @@ function Header() {
     <React.Fragment>
       <header>
         <CustomContainer maxWidth="">
-          <h1>
-            <Link to={"/"}>LOGO</Link>
-          </h1>
+          
+            <Link to={"/"}>
+              <img width={'90px'} height={'90px'} src="./Images/Logo.png" alt="logo" />
+            </Link>
+          
 
           <Nav
             mobileNav={mobileNav}
