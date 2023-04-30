@@ -6,7 +6,8 @@ const TrustedContainer = styled(Container)(({theme})=>({
     display:'flex',
     alignItems:'center',
     justifyContent:'space-around',
-    marginTop:'40px'
+    marginTop:'40px',
+    
 }))
 
 function Trusted() {

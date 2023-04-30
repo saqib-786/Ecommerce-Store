@@ -1,0 +1,56 @@
+#contact-section{
+    background-image: url('../public/Images/family.jpg');
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-blend-mode: soft-light;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 5%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#form-box{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px 40px;
+}
+
+.textfield__label{
+    color: white !important;
+}
+
+.img-box{
+    margin: 10px 20px;
+    background-color: #2196f3;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .contact-container{
+        flex-wrap: wrap-reverse;
+    }
+    #form-box{
+        width: 80%;
+        margin: 0px auto;
+    }
+    /* #contact-icon-box{
+        
+    } */
+    .img-box{
+        width: 50px;
+        height: 50px;
+    }
+}
