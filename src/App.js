@@ -10,6 +10,7 @@ import SingleProduct from './Screens/SingleProduct';
 import { ThemeProvider } from '@mui/material';
 import theme from './Config/Theme/Theme';
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Route path='/cart' element={<Cart/>} />
       <Route path='*' element={<ErrorPage/>} />
     </Routes>
+    <Footer/>
    </Router>
    </ThemeProvider>
   
